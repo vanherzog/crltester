@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canada"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/server_name"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="211dp"
+        android:layout_marginLeft="211dp"
+        android:text="Check" />
+
+    <ImageView
+        android:id="@+id/imageViewOnline"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <ImageView
+        android:id="@+id/imageViewOffline"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/presence_busy" />
+
+    <ImageView
+        android:id="@+id/imageViewDefault"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        app:srcCompat="@android:drawable/presence_invisible" />
+
+
+</RelativeLayout>
